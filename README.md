@@ -116,6 +116,8 @@ syntax examples.
 - For example, if I wanted to select residues 10-20 in chain A, I would use “:A
 and 10-20”
 - Selections go in the boxes for each representation, as below:
+![image](https://user-images.githubusercontent.com/25435513/142037639-8300ca64-004e-4de9-ae3f-425ade8db1b7.png)
+
 
 b. There will be several ligands present in the structure. Make just the dexamethasone
 ligand visible. Tip: Look on the RCSB PDB entry page for the template to find out
@@ -133,7 +135,10 @@ representation so you can see the sidechains and backbone.
 ### Step 6 
 
 Once your model is finished, download it from the results page on the SWISS-MODEL
-website. You can download everything in a single .Zip file:
+website. You can download everything in a single .zip file:
+
+![image](https://user-images.githubusercontent.com/25435513/142037802-bb03599e-a6d8-4c5a-8311-e44a3934bc8a.png)
+
 
 ### Step 7 
 
