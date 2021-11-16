@@ -207,6 +207,10 @@ d. You can find SMILES strings for chemicals using a website like [PubChem](http
 Run the analysis for both complexes separately. On the results page you will be given a value
 for the affinity. Remember that a lower Kd, the dissociation constant, indicates a higher
 affinity of the ligand for the protein. However, this website gives the result as -log10(Kd),
-which means higher affinity is indicated by a higher score.12. Compare the values you get for both complexes. Does this support the idea hormone
+which means higher affinity is indicated by a higher score.
+
+### Step 11 
+
+Compare the values you get for both complexes. Does this support the idea hormone
 binding of albumin is a potential factor in the decreased effectiveness of dexamethasone in
 male patients?
