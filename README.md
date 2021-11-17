@@ -16,9 +16,11 @@ Please - **only use if stuff doesn't work**. Best to try things first.
 
 ## Other resources you may find interesting
 
-The big news in structural bioinformatics recently has been Deepmind and their work on Alphafold and Alphafold2. If you are interested in this exciting new approach to modelling, I'd recommend reading the articles/papers on the [Deepmind alphafold page](https://deepmind.com/research/case-studies/alphafold), and perhaps take a look at some of the talks members of the team have done.
+The big news in structural bioinformatics recently has been Deepmind and their work on Alphafold and Alphafold2. If you are interested in this exciting new approach to modelling, I'd recommend reading the articles/papers on the [Deepmind alphafold page](https://deepmind.com/research/case-studies/alphafold), and perhaps take a look at some of the talks members of the team have done. If you want to really get in the weeds with the details, read the supplementary material to the papers - that is where all the information actually is.
 
-I would be wary, however, of people claiming to have "solved the protein folding problem"... this is a rather grand claim and is not strictly true. Nonetheless, the software is super impressive and they keep improving it with the release of Alphafold-multimer which can predict complexes.
+I would be wary, however, of people claiming to have "solved the protein folding problem"... this is a rather grand claim and is not strictly true. They have really come up with a very good solution to the *protein structure prediction problem*. Protein **folding** is a different process that they do not predict IMO. Nonetheless, the software is super impressive and they keep improving it with the release of Alphafold-multimer which can predict complexes.
+
+A really good video explaining the paper in more depth can be found [here](https://www.youtube.com/watch?v=nGVFbPKrRWQ&t=892s). Nice and nerdy, but still understandable. Includes some interesting info on how it was trained as well.
 
 If you want to run Alphafold yourself, there are a number of Google Colab notebooks which allow you to have a go. 
 
