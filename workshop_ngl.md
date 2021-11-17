@@ -8,6 +8,11 @@ In this workshop you will learn how to do the following:
 - Build a homology model using "traditional" template based methods
 - Examine drug/ligand binding through homology modelling and structural alignment
 
+This workshop uses NGL viewer, an online protein visualisation tool. It should be used if its not possible for you to install Pymol on the computer you are currently working
+on - NGL is not nearly as advanced as Pymol. BUT if you cant get Pymol working you can still do everything, it just takes a few more steps sometimes.
+
+So, if you can try to use the [Pymol version](./workshop_pymol.md). Both sets of instructions are identical up until Step 5, so you can easily change halfway.
+
 ## Modelling Protein Structures
 
 ### Step 1 
@@ -100,7 +105,12 @@ You are now going to visualise some protein structures. First we will start by l
 template structure. You will be using the NGL viewer to visualise the proteins. NGL viewer is
 an online, Javascript library that allows you to view and manipulate biological molecules in
 3D. It is more limited than desktop apps like PyMol, Chimera or VMD – but it does a good job
-for simpler tasks. You can find it [here](http://proteinformatics.charite.de/ngl-tools/ngl/html/ngl.html).
+for simpler tasks. You can find it [here](http://nglviewer.org/ngl/).
+
+> Attention! Currently NGL viewer is a buggy mess. However, in lieu of installing Pymol or another protein visualisation software, its the next
+> best thing. You will find issues with tasks like structural alignment, fetching structures using PDB codes and probably other aspects of the viewer.
+> I have provided alternate ways to do tasks like alignment that would be usually done in the viewer if you were using Pymol, for example.
+> If you run into an issue, ask a demonstrator for help.
 
 ### Step 5 
 
@@ -108,10 +118,8 @@ While you are waiting for the modelling to finish, use File -> Open… to load i
 you used as a template for the modelling. The mouse controls for the camera are: mouse
 wheel for zoom; right click and drag to pan the camera; left click and drag to rotate thecamera. If you click on an atom, information about it will be shown in the bottom left corner of the screen (this is useful for identifying things for selection syntax logic).
 
-a. Use the information in the documentation (http://proteinformatics.charite.de/ngltools/ngl/doc/index.html#User_manual/Introduction/Welcome) to help you. The
-key section is the “Selection Language” part. That page has an embedded
-protein/DNA complex visualisation that will let you test out some different selection
-syntax examples.
+a. Use the information in the [documentation](https://nglviewer.org/ngl/api/manual/index.html) to help you. The
+key section is the “Selection Language” part. There are lots of examples on this page which will help you when doing your own.
 
 - For example, if I wanted to select residues 10-20 in chain A, I would use “:A
 and 10-20”
@@ -120,13 +128,17 @@ and 10-20”
 
 
 b. There will be several ligands present in the structure. Make just the dexamethasone
-ligand visible. Tip: Look on the RCSB PDB entry page for the template to find out
-what the 3 letter name of the dexamethasone residue is.
+ligand visible. 
+
+> Tip: Look on the RCSB PDB entry page for the template to find out
+> what the 3 letter residue name of the dexamethasone residue is. You can then use this in the selection syntax box to select just the drug.
 
 c. Make the sidechains of the protein visible by creating a new licorice representation,
 and selecting just the sidechain atoms (look at the documentation). If you want, try
 and identify just those residues close to the drug molecule, and only make those
-sidechains visible (Tip: click on atoms to get the residue numbers).
+sidechains visible.
+
+>Tip: click on atoms to get the residue numbers - they will appear in the bottom left of the screen, and also appear when you mouse over atoms.
 
 d. You can also make the “surface” of the protein visible by adding a surface
 representation. Make the selection only protein, and change the opacity of the
@@ -138,6 +150,8 @@ Once your model is finished, download it from the results page on the SWISS-MODE
 website. You can download everything in a single .zip file:
 
 ![image](https://user-images.githubusercontent.com/25435513/142037802-bb03599e-a6d8-4c5a-8311-e44a3934bc8a.png)
+
+If there are any issues with this - its taking forever, or you get errors, you will find a model I made earlier in the [data](./data) folder.
 
 
 ### Step 7 
@@ -174,20 +188,29 @@ case.
 b. Are there any structures of albumin proteins bound to hormone molecules? Search
 on the RCSB website to find them. Look at the organism.
 
-c. If you find one, download the structure file and load it into the NGL viewer window.
+c. If you find one, download the structure file.
 
-d. You will need to align this new structure to your template and/or model to compare
-the structures properly.
+### Step 9 
 
-e. Click the little menu button next to the new structure’s in the sidebar, and where it
-says “Superpose” select your model structure. This will align it to your model protein
-coordinates.
+You will need to align this new structure to your template and/or model to compare
+the structures properly. Unfortunately the superpose function in NGL has been buggy recently, so we are going to use another webserver
+to do the structural alignment - [TMalign](https://zhanggroup.org/TM-align/).
+
+a. You should upload two PDB files to the server. First file should be the new structure, the second should be the template - this should mean the new structure is translated in space to align the template coords.
+
+b. Submit the job - don't worry about putting in an email if you don't want, the server is very fast usually.
+
+c. On the results page will be a bunch of information. Near the top will be information about the alignment, including a score called the TM-score and RMSD. These are both ways of describing the quality of the alignment. Feel free to look up what they mean, as they are very useful in structural bioinformatics and appear a lot.
+
+d. Below that there will be an interactive 3D view of the alignment. Below *that* will be the output files. Download the one that says "...full-atom structure of the entire chain with ligands/solvents...". We choose this one because we want the ligands to be included in the alignment. It describes the files as Rasmol scripts - Rasmol is an ancient protein viewer that is still fairly popular... luckily a rasmol script is basically a PDB file with some extra information/gunk. 
+
+e. Open up the aligned structure file in NGL viewer. The structure consists of two chains - A will be the first protein you input, B the second. Feel free to colour/change the reps of these as you wish.
 
 f. Look at the aligned structures, specifically the binding site for dexamethasone. How
 similar are the poses of the ligands between the template and this new structure?
 Why do you think the drug is less effective for male patients?
 
-### Step 9 
+### Step 10 
 
 If you have time, you can try and predict the different binding affinities of the two molecules
 for albumin. For this, you can use [CSM-LIG](http://biosig.unimelb.edu.au/csm_lig/prediction).
