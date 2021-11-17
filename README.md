@@ -10,7 +10,7 @@ Otherwise, use the [NGL version](./workshop_ngl.md) - the instructions are basic
 
 ### If you get stuck...
 
-If things don't work (always a possibility with academic software), the [data](./data) folder contains various files (including the homology model PDB file, `called model.pdb`) so you can use them in a pinch. 
+If things don't work (always a possibility with academic software), the [data](./data) folder contains various files (including the homology model PDB file, called `model.pdb`) so you can use them in a pinch. 
 
 Please - **only use if stuff doesn't work**. Best to try things first.
 
