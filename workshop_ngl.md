@@ -221,7 +221,9 @@ and the structure of the ligand in SMILES format.
 b. For example, for dexamethasone the residue name is “DEX” in the PDB file.
 
 c. The SMILES string for dexamethasone is:
-“CC1CC2C3CCC4=CC(=O)C=CC4(C3(C(CC2(C1(C(=O)CO)O)C)O)F)C”
+```
+CC1CC2C3CCC4=CC(=O)C=CC4(C3(C(CC2(C1(C(=O)CO)O)C)O)F)C
+```
 
 d. You can find SMILES strings for chemicals using a website like [PubChem](https://pubchem.ncbi.nlm.nih.gov/).
 
