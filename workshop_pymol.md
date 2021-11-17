@@ -8,6 +8,10 @@ In this workshop you will learn how to do the following:
 - Build a homology model using "traditional" template based methods
 - Examine drug/ligand binding through homology modelling and structural alignment
 
+This is the preferred version of the workshop instructions, as Pymol is much more powerful and useful than NGL - and its much more likely that you'd be using Pymol or something similar in a proper research setting.
+
+However, if you have issues with Pymol, feel free to use the [NGL version](./workshop_ngl.md) of the instructions. Until Step 5, both protocols are the same.
+
 ## Modelling Protein Structures
 
 ### Step 1 
