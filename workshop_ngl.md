@@ -210,7 +210,17 @@ f. Look at the aligned structures, specifically the binding site for dexamethaso
 similar are the poses of the ligands between the template and this new structure?
 Why do you think the drug is less effective for male patients?
 
-### Step 10 
+### Step 10
+
+Alphafold2 is the exciting new prediction algorithm - so lets have a look at one of their models. Unfortunately, I've found the method takes a bit longer to run than is realistic given the length of the workshop, so you won't be making the model yourself - instead we will use the new Alphafold protein structure database.
+
+a. Go to the [AF database](https://alphafold.ebi.ac.uk/) and find the entry for albumin in humans - you could search using the protein name or the Uniprot accession number.
+
+b. Have a look at the info on the page - the confidence values for the prediction are displayed on a 3D model of the structure. What do you see when you look at this?
+
+c. Download the file in PDB format. You will want to align it to the template structure as you did before so you can compare it. How similar is it? Are there differences? Why do you think there are those differences?
+
+### Step 11 
 
 If you have time, you can try and predict the different binding affinities of the two molecules
 for albumin. For this, you can use [CSM-LIG](http://biosig.unimelb.edu.au/csm_lig/prediction).
@@ -227,14 +237,14 @@ CC1CC2C3CCC4=CC(=O)C=CC4(C3(C(CC2(C1(C(=O)CO)O)C)O)F)C
 
 d. You can find SMILES strings for chemicals using a website like [PubChem](https://pubchem.ncbi.nlm.nih.gov/).
 
-### Step 10 
+### Step 12 
 
 Run the analysis for both complexes separately. On the results page you will be given a value
 for the affinity. Remember that a lower Kd, the dissociation constant, indicates a higher
 affinity of the ligand for the protein. However, this website gives the result as -log10(Kd),
 which means higher affinity is indicated by a higher score.
 
-### Step 11 
+### Step 13 
 
 Compare the values you get for both complexes. Does this support the idea hormone
 binding of albumin is a potential factor in the decreased effectiveness of dexamethasone in
