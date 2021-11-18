@@ -38,4 +38,4 @@ Otherwise, feel free to get in contact with me by raising an issue if you have a
 
 ## Using/Adapting this workshop
 
-I have absolutely no issue with people using or adapting content from this workshop for their own students/work. I just ask you give me, Elliot Drew, credit as the original author of the work.
+I have absolutely no issue with people using or adapting content from this workshop for their own students/work. I just ask you give me, Elliot Drew, credit as the original author of the work - a link to this repo would be sufficient.
