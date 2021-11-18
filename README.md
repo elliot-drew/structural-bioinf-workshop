@@ -8,6 +8,8 @@ If you are able to install software on the computer you are using, then I'd reco
 
 Otherwise, use the [NGL version](./workshop_ngl.md) - the instructions are basically the same, but there are a few extra steps in the NGL version (e.g. using an extra webserver to perform the structural alignments.
 
+Also provided are PDF versions of the practical protocols in an easy to print format if you wanted to take notes that way. You can also download the lecture handout as a PDF [here](./Structural_Bioinformatics_Cranfield_2021.pdf) as well.
+
 ### If you get stuck...
 
 If things don't work (always a possibility with academic software), the [data](./data) folder contains various files (including the homology model PDB file, called `model.pdb`) so you can use them in a pinch. 
