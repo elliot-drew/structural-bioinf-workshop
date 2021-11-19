@@ -6,6 +6,8 @@ There are two versions of the workshop - one version uses Pymol, the other uses 
 
 If you are able to install software on the computer you are using, then I'd recommend using the [Pymol version](./workshop_pymol.md) as Pymol is significantly more powerful and better practice for software you would be using in a proper research role.
 
+If you are planning to use the Pymol version, it might also be a good idea to install it in advance - you can find instructions/links on how to install it for various operating systems in the handout.
+
 Otherwise, use the [NGL version](./workshop_ngl.md) - the instructions are basically the same, but there are a few extra steps in the NGL version (e.g. using an extra webserver to perform the structural alignments.
 
 Also provided are PDF versions of the practical protocols in an easy to print format if you wanted to take notes that way. You can also download the lecture handout as a PDF [here](./Structural_Bioinformatics_Cranfield_2021.pdf) as well.
