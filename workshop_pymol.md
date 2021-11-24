@@ -154,9 +154,9 @@ representation so you can see the sidechains and backbone. Opacity of the surfac
 ### Step 6 
 
 Once your model is finished, download it from the results page on the SWISS-MODEL
-website. You can download everything in a single .zip file:
+website. You can download everything in a single .zip file by selecting the Archive option:
 
-![image](https://user-images.githubusercontent.com/25435513/142037802-bb03599e-a6d8-4c5a-8311-e44a3934bc8a.png)
+![image](https://user-images.githubusercontent.com/25435513/143265688-e5e0da59-b771-4acc-a5e5-0004bb50cc87.png)
 
 
 ### Step 7 
