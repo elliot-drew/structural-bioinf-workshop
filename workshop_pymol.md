@@ -107,6 +107,15 @@ You will need to install it to use it. A good time to do this would be while you
 
 There is an open source version, and a paid version (for which you can get a free educational license OR choose to never activate it... it will not stop you using it).
 
+RECOMMENDED INSTALLATION:
+
+- Download the version for your particular OS here - https://pymol.org/2/
+- Get an educational license file here - https://pymol.org/edu/
+- Follow the instructions for your particular OS here - https://pymol.org/2/support.html?#installation
+- If you have trouble with the license file, don't worry too much - it should still work if you don't supply one.
+
+ALTERNATIVE INSTALLATION instructions below as well - USE THE ONES ABOVE IF YOU CAN:
+
 Here are some instructions for linux: [link](https://pymolwiki.org/index.php/Linux_Install)
 
 Here are some instructions for OSX: [link](https://pymolwiki.org/index.php/MAC_Install)
