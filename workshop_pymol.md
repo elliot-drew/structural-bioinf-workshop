@@ -170,7 +170,7 @@ website. You can download everything in a single .zip file by selecting the Arch
 
 ### Step 7 
 
-Extract all the files, and open the model in the same NGL window as your template
+Extract all the files, and open the model in the same Pymol window as your template
 structure. You will find the model PDB file inside the extracted folders.
 
 a. Are the two structures aligned already? If so, why is that?
